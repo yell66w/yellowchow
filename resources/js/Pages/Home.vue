@@ -15,8 +15,9 @@ defineProps({
     <Head title="Home" />
     <CustomerLayout>
         <!-- HERO -->
-        <div class="flex flex-row px-12 mt-16">
+        <div class="flex flex-row px-12 mt-20">
             <div class="flex flex-col basis-3/6 gap-9 justify-center">
+                <!-- TODO TEMPORARY FROM FOOD PANDA HEHE -->
                 <h1 class="text-6xl font-bold">
                     It's the food and groceries you love, delivered
                 </h1>
@@ -33,7 +34,10 @@ defineProps({
             <div class="flex basis-4/6 items-center justify-center">
                 <img src="@/Assets/Images/hero.png" alt="" srcset="" />
             </div>
-            <!-- TODO TEMPORARY FROM FOOD PANDA HEHE -->
         </div>
+        <!-- HERO -->
+
+        <!-- Recommended Cards-->
+        <!-- Recommended Cards-->
     </CustomerLayout>
 </template>
