@@ -4,7 +4,7 @@ import YLink from "@/Components/YLink.vue";
 </script>
 
 <template>
-    <div>
+    <div class="h-screen">
         <!-- NAVBAR -->
         <div class="flex flex-row justify-between py-6 px-12">
             <div>

@@ -1,6 +1,7 @@
 <script setup>
 import { Head, Link } from "@inertiajs/inertia-vue3";
 import YLink from "@/Components/YLink.vue";
+import ButtonLink from "@/Components/ButtonLink.vue";
 import CustomerLayout from "@/Layouts/Customer.vue";
 defineProps({
     canLogin: Boolean,
@@ -12,73 +13,27 @@ defineProps({
 
 <template>
     <Head title="Home" />
-
     <CustomerLayout>
         <!-- HERO -->
-        <div>HERO</div>
+        <div class="flex flex-row px-12 mt-16">
+            <div class="flex flex-col basis-3/6 gap-9 justify-center">
+                <h1 class="text-6xl font-bold">
+                    It's the food and groceries you love, delivered
+                </h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aspernatur magni excepturi dolorum quidem perspiciatis atque
+                    obcaecati distinctio. Vero, rerum voluptatem!
+                </p>
+                <div>
+                    <ButtonLink>Order Now</ButtonLink>
+                </div>
+            </div>
+
+            <div class="flex basis-4/6 items-center justify-center">
+                <img src="@/Assets/Images/hero.png" alt="" srcset="" />
+            </div>
+            <!-- TODO TEMPORARY FROM FOOD PANDA HEHE -->
+        </div>
     </CustomerLayout>
 </template>
-
-<style scoped>
-.bg-gray-100 {
-    background-color: #f7fafc;
-    background-color: rgba(247, 250, 252, var(--tw-bg-opacity));
-}
-
-.border-gray-200 {
-    border-color: #edf2f7;
-    border-color: rgba(237, 242, 247, var(--tw-border-opacity));
-}
-
-.text-gray-400 {
-    color: #cbd5e0;
-    color: rgba(203, 213, 224, var(--tw-text-opacity));
-}
-
-.text-gray-500 {
-    color: #a0aec0;
-    color: rgba(160, 174, 192, var(--tw-text-opacity));
-}
-
-.text-gray-600 {
-    color: #718096;
-    color: rgba(113, 128, 150, var(--tw-text-opacity));
-}
-
-.text-gray-700 {
-    color: #4a5568;
-    color: rgba(74, 85, 104, var(--tw-text-opacity));
-}
-
-.text-gray-900 {
-    color: #1a202c;
-    color: rgba(26, 32, 44, var(--tw-text-opacity));
-}
-
-@media (prefers-color-scheme: dark) {
-    .dark\:bg-gray-800 {
-        background-color: #2d3748;
-        background-color: rgba(45, 55, 72, var(--tw-bg-opacity));
-    }
-
-    .dark\:bg-gray-900 {
-        background-color: #1a202c;
-        background-color: rgba(26, 32, 44, var(--tw-bg-opacity));
-    }
-
-    .dark\:border-gray-700 {
-        border-color: #4a5568;
-        border-color: rgba(74, 85, 104, var(--tw-border-opacity));
-    }
-
-    .dark\:text-white {
-        color: #fff;
-        color: rgba(255, 255, 255, var(--tw-text-opacity));
-    }
-
-    .dark\:text-gray-400 {
-        color: #cbd5e0;
-        color: rgba(203, 213, 224, var(--tw-text-opacity));
-    }
-}
-</style>
