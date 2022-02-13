@@ -6,7 +6,7 @@ import YLink from "@/Components/YLink.vue";
 <template>
     <div class="h-screen">
         <!-- NAVBAR -->
-        <div class="flex flex-row justify-between py-6 px-12">
+        <div class="flex flex-row justify-between py-6 px-36">
             <div>
                 <h1 class="font-bold text-2xl">
                     <span class="text-amber-400">YELLOW</span>CHOW
@@ -47,5 +47,11 @@ import YLink from "@/Components/YLink.vue";
         </div>
         <!-- NAVBAR -->
         <slot />
+
+        <div
+            class="mt-10 bg-neutral-900 text-white py-6 items-center justify-center text-center"
+        >
+            <h1>Yellow Chow &copy; {{ new Date().getFullYear() }}</h1>
+        </div>
     </div>
 </template>

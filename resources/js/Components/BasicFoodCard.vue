@@ -4,7 +4,7 @@ const props = defineProps(["href", "image"]);
 
 <template lang="">
     <div
-        class="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 rounded-xl shadow-md h-60 w-60 flex flex-col items-center justify-center gap-9 px-9"
+        class="cursor-pointer transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 rounded-xl shadow-md h-52 w-52 flex flex-col items-center justify-center gap-9 px-9"
     >
         <img src="@/Assets/Images/hero.png" />
         <p class="font-bold uppercase">

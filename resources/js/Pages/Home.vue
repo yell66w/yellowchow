@@ -16,7 +16,7 @@ defineProps({
     <Head title="Home" />
     <CustomerLayout>
         <!-- HERO -->
-        <div class="flex flex-row px-12 mt-20">
+        <div class="flex flex-row px-36 mt-20 gap-10">
             <div class="flex flex-col basis-3/6 gap-9 justify-center">
                 <!-- TODO TEMPORARY FROM FOOD PANDA HEHE -->
                 <h1 class="text-6xl font-bold">
@@ -39,14 +39,14 @@ defineProps({
         <!-- HERO -->
 
         <!-- Food Cards-->
-        <div class="flex flex-row gap-10 px-12">
+        <div
+            class="mt-10 flex flex-row gap-10 px-36 flex-wrap items-center justify-center"
+        >
             <BasicFoodCard>Burger</BasicFoodCard>
             <BasicFoodCard>Tacos</BasicFoodCard>
             <BasicFoodCard>Pasta</BasicFoodCard>
-            <BasicFoodCard>Cheese</BasicFoodCard>
             <BasicFoodCard>Steak</BasicFoodCard>
-            <BasicFoodCard>Cake</BasicFoodCard>
-            <BasicFoodCard>Fish</BasicFoodCard>
+            <BasicFoodCard>Dessert</BasicFoodCard>
         </div>
 
         <!-- Food Cards-->
