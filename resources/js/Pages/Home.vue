@@ -40,7 +40,7 @@ defineProps({
 
         <!-- Food Cards-->
         <div
-            class="mt-10 flex flex-row gap-10 px-36 flex-wrap items-center justify-center"
+            class="relative mt-10 flex flex-row gap-10 px-36 flex-wrap items-center"
         >
             <BasicFoodCard>Burger</BasicFoodCard>
             <BasicFoodCard>Tacos</BasicFoodCard>
