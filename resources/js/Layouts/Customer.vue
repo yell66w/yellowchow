@@ -36,11 +36,13 @@ import YLink from "@/Components/YLink.vue";
                 >
             </div>
             <div>
-                <button
-                    class="bg-amber-400 font-bold text-white px-9 py-2 rounded-full"
+                <Link
+                    as="button"
+                    :href="route('login')"
+                    class="ease-linear duration-200 hover:bg-yellow-400 bg-amber-400 font-bold text-white px-9 py-2 rounded-full"
                 >
                     Login
-                </button>
+                </Link>
             </div>
         </div>
         <!-- NAVBAR -->
