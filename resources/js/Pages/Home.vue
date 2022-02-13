@@ -1,6 +1,7 @@
 <script setup>
 import { Head, Link } from "@inertiajs/inertia-vue3";
 import YLink from "@/Components/YLink.vue";
+import BasicFoodCard from "@/Components/BasicFoodCard.vue";
 import ButtonLink from "@/Components/ButtonLink.vue";
 import CustomerLayout from "@/Layouts/Customer.vue";
 defineProps({
@@ -37,7 +38,17 @@ defineProps({
         </div>
         <!-- HERO -->
 
-        <!-- Recommended Cards-->
-        <!-- Recommended Cards-->
+        <!-- Food Cards-->
+        <div class="flex flex-row gap-10 px-12">
+            <BasicFoodCard>Burger</BasicFoodCard>
+            <BasicFoodCard>Tacos</BasicFoodCard>
+            <BasicFoodCard>Pasta</BasicFoodCard>
+            <BasicFoodCard>Cheese</BasicFoodCard>
+            <BasicFoodCard>Steak</BasicFoodCard>
+            <BasicFoodCard>Cake</BasicFoodCard>
+            <BasicFoodCard>Fish</BasicFoodCard>
+        </div>
+
+        <!-- Food Cards-->
     </CustomerLayout>
 </template>
