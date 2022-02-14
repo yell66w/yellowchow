@@ -6,7 +6,12 @@ const props = defineProps(["href", "image"]);
     <div
         class="grow cursor-pointer transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 rounded-xl shadow-md h-56 w-56 flex flex-col items-center justify-center gap-9 px-9"
     >
-        <img src="@/Assets/Images/hero.png" />
+        <img
+            class="h-20 object-cover"
+            :src="'images/' + image"
+            alt=""
+            srcset=""
+        />
         <p class="font-bold uppercase">
             <slot />
         </p>
