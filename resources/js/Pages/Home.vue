@@ -1,8 +1,10 @@
 <script setup>
 import { Head, Link } from "@inertiajs/inertia-vue3";
 import YLink from "@/Components/YLink.vue";
-import BasicFoodCard from "@/Components/BasicFoodCard.vue";
+import FoodCategoryCard from "@/Components/FoodCategoryCard.vue";
+import FoodCard from "@/Components/FoodCard.vue";
 import ButtonLink from "@/Components/ButtonLink.vue";
+import Menu from "@/Components/Menu.vue";
 import CustomerLayout from "@/Layouts/Customer.vue";
 defineProps({
     canLogin: Boolean,
@@ -40,15 +42,61 @@ defineProps({
 
         <!-- Food Cards-->
         <div
-            class="relative mt-10 flex flex-row gap-10 px-36 flex-wrap items-center"
+            class="relative mt-10 flex flex-row gap-10 px-36 flex-nowrap items-center"
         >
-            <BasicFoodCard>Burger</BasicFoodCard>
-            <BasicFoodCard>Tacos</BasicFoodCard>
-            <BasicFoodCard>Pasta</BasicFoodCard>
-            <BasicFoodCard>Steak</BasicFoodCard>
-            <BasicFoodCard>Dessert</BasicFoodCard>
+            <FoodCategoryCard>Burger</FoodCategoryCard>
+            <FoodCategoryCard>Tacos</FoodCategoryCard>
+            <FoodCategoryCard>Pasta</FoodCategoryCard>
+            <FoodCategoryCard>Steak</FoodCategoryCard>
+            <FoodCategoryCard>Dessert</FoodCategoryCard>
+            <!-- <div
+                class="hover:bg-neutral-800 bg-neutral-900 text-white rounded-full w-8 h-8 items-center justify-center flex font-bold cursor-pointer"
+            >
+                >
+            </div> -->
         </div>
-
         <!-- Food Cards-->
+        <hr class="my-20" />
+
+        <Menu
+            title="All Time Favorites"
+            desc="Discover your new favorites here!"
+        >
+            <FoodCard>Burger</FoodCard>
+            <FoodCard>Tacos</FoodCard>
+            <FoodCard>Pasta</FoodCard>
+            <FoodCard>Steak</FoodCard>
+            <FoodCard>Dessert</FoodCard>
+        </Menu>
+
+        <hr class="my-20" />
+
+        <Menu title="Best Deals" desc="Discover your new favorites here!">
+            <FoodCard>Burger</FoodCard>
+            <FoodCard>Tacos</FoodCard>
+            <FoodCard>Pasta</FoodCard>
+            <FoodCard>Steak</FoodCard>
+            <FoodCard>Dessert</FoodCard>
+            <FoodCard>Dessert</FoodCard>
+            <FoodCard>Dessert</FoodCard>
+            <FoodCard>Dessert</FoodCard>
+            <FoodCard>Dessert</FoodCard>
+            <FoodCard>Dessert</FoodCard>
+        </Menu>
+
+        <hr class="my-20" />
+
+        <Menu more title="All Meals" desc="Discover your new favorites here!">
+            <FoodCard>Burger</FoodCard>
+            <FoodCard>Tacos</FoodCard>
+            <FoodCard>Pasta</FoodCard>
+            <FoodCard>Steak</FoodCard>
+            <FoodCard>Dessert</FoodCard>
+            <FoodCard>Dessert</FoodCard>
+            <FoodCard>Dessert</FoodCard>
+            <FoodCard>Dessert</FoodCard>
+            <FoodCard>Dessert</FoodCard>
+            <FoodCard>Dessert</FoodCard>
+        </Menu>
     </CustomerLayout>
 </template>

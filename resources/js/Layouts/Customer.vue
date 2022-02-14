@@ -49,7 +49,7 @@ import YLink from "@/Components/YLink.vue";
         <slot />
 
         <div
-            class="mt-10 bg-neutral-900 text-white py-6 items-center justify-center text-center"
+            class="mt-20 bg-neutral-900 text-white py-6 items-center justify-center text-center"
         >
             <h1>Yellow Chow &copy; {{ new Date().getFullYear() }}</h1>
         </div>
