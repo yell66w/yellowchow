@@ -1,5 +1,5 @@
 <script setup>
-const props = defineProps(["href", "image", "desc", "price"]);
+const props = defineProps(["href", "image", "desc", "price", "category"]);
 </script>
 
 <template lang="">
@@ -13,7 +13,7 @@ const props = defineProps(["href", "image", "desc", "price"]);
                 <slot />
             </p>
             <p class="text-xs text-gray-500 capitalize">
-                {{ desc ? desc : "lorem ipsum sichi henge." }}
+                {{ category ? category : "Delicious Meal." }}
             </p>
         </div>
 

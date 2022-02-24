@@ -6,11 +6,13 @@ import FoodCard from "@/Components/FoodCard.vue";
 import ButtonLink from "@/Components/ButtonLink.vue";
 import Menu from "@/Components/Menu.vue";
 import CustomerLayout from "@/Layouts/Customer.vue";
+
 defineProps({
     canLogin: Boolean,
     canRegister: Boolean,
     laravelVersion: String,
     phpVersion: String,
+    menuItems: Array,
 });
 </script>
 
@@ -40,25 +42,20 @@ defineProps({
         </div>
         <!-- HERO -->
 
-        <!-- Food Cards-->
+        <!-- Food Category Cards-->
         <div
             class="relative mt-10 flex flex-row gap-10 px-36 flex-nowrap items-center"
         >
-            <FoodCategoryCard>Burger</FoodCategoryCard>
-            <FoodCategoryCard>Tacos</FoodCategoryCard>
-            <FoodCategoryCard>Pasta</FoodCategoryCard>
-            <FoodCategoryCard>Steak</FoodCategoryCard>
-            <FoodCategoryCard>Dessert</FoodCategoryCard>
-            <!-- <div
-                class="hover:bg-neutral-800 bg-neutral-900 text-white rounded-full w-8 h-8 items-center justify-center flex font-bold cursor-pointer"
-            >
-                >
-            </div> -->
+            <FoodCategoryCard image="breakfast.png">Breakfast</FoodCategoryCard>
+            <FoodCategoryCard image="chicken.png">Chicken</FoodCategoryCard>
+            <FoodCategoryCard image="beef.png">Beef</FoodCategoryCard>
+            <FoodCategoryCard image="dessert.png">Dessert</FoodCategoryCard>
+            <FoodCategoryCard image="beverages.png">Beverages</FoodCategoryCard>
         </div>
         <!-- Food Cards-->
         <hr class="my-20" />
 
-        <Menu
+        <!-- <Menu
             title="All Time Favorites"
             desc="Discover your new favorites here!"
         >
@@ -67,11 +64,11 @@ defineProps({
             <FoodCard>Pasta</FoodCard>
             <FoodCard>Steak</FoodCard>
             <FoodCard>Dessert</FoodCard>
-        </Menu>
+        </Menu> -->
 
-        <hr class="my-20" />
+        <!-- <hr class="my-20" /> -->
 
-        <Menu title="Best Deals" desc="Discover your new favorites here!">
+        <!-- <Menu title="Best Deals" desc="Discover your new favorites here!">
             <FoodCard>Burger</FoodCard>
             <FoodCard>Tacos</FoodCard>
             <FoodCard>Pasta</FoodCard>
@@ -84,19 +81,16 @@ defineProps({
             <FoodCard>Dessert</FoodCard>
         </Menu>
 
-        <hr class="my-20" />
+        <hr class="my-20" /> -->
 
         <Menu more title="All Meals" desc="Discover your new favorites here!">
-            <FoodCard>Burger</FoodCard>
-            <FoodCard>Tacos</FoodCard>
-            <FoodCard>Pasta</FoodCard>
-            <FoodCard>Steak</FoodCard>
-            <FoodCard>Dessert</FoodCard>
-            <FoodCard>Dessert</FoodCard>
-            <FoodCard>Dessert</FoodCard>
-            <FoodCard>Dessert</FoodCard>
-            <FoodCard>Dessert</FoodCard>
-            <FoodCard>Dessert</FoodCard>
+            <FoodCard
+                v-for="menuItem in menuItems"
+                :key="menuItem.id"
+                :price="menuItem.price"
+                :category="menuItem.category"
+                >{{ menuItem.name }}</FoodCard
+            >
         </Menu>
     </CustomerLayout>
 </template>
