@@ -43,14 +43,19 @@ defineProps({
         <!-- HERO -->
 
         <!-- Food Category Cards-->
-        <div
-            class="relative mt-10 flex flex-row gap-10 px-36 flex-nowrap items-center"
-        >
+        <div class="mt-10 gap-6 pl-36 grid grid-cols-6">
             <FoodCategoryCard image="breakfast.png">Breakfast</FoodCategoryCard>
             <FoodCategoryCard image="chicken.png">Chicken</FoodCategoryCard>
             <FoodCategoryCard image="beef.png">Beef</FoodCategoryCard>
             <FoodCategoryCard image="dessert.png">Dessert</FoodCategoryCard>
             <FoodCategoryCard image="beverages.png">Beverages</FoodCategoryCard>
+            <div class="relative w-10 hidden lg:block">
+                <div
+                    class="cursor-pointer absolute hidden lg:flex bg-neutral-900 left-0 top-24 text-white w-10 h-10 items-center justify-center font-bold rounded-full"
+                >
+                    >
+                </div>
+            </div>
         </div>
         <!-- Food Cards-->
         <hr class="my-20" />
